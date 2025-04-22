@@ -49,9 +49,9 @@ export function PaymentDetailsForm({
       )}
       <div className="grid w-full gap-1.5">
         <Label htmlFor="billingDate">Billing Date</Label>
-        <Input 
-          type="date" 
-          id="billingDate" 
+        <Input
+          type="date"
+          id="billingDate"
           value={formData.billingDate}
           onChange={handleChange}
           className={errors.billingDate ? "border-red-500" : ""}
@@ -116,7 +116,7 @@ export function PaymentDetailsForm({
           {errors.cvc && <p className="text-sm text-red-500">{errors.cvc}</p>}
         </div>
       </div>
-      
+
       <div className="flex justify-end gap-2 pt-4">
         {onCancel && (
           <Button
@@ -128,12 +128,6 @@ export function PaymentDetailsForm({
             Cancel
           </Button>
         )}
-        <Button 
-          type="submit"
-          disabled={isPending}
-        >
-          Save
-        </Button>
       </div>
     </form>
   );
