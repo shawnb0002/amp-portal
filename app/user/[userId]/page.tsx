@@ -8,12 +8,13 @@ import { UserActivity } from "@/components/userProfile/UserActivity";
 import { supabase } from "@/lib/supabaseClient";
 import type { Transaction, User } from "@/types";
 
-export default async function UserProfile({
-  params,
-}: {
-  params: { userId: string };
-}) {
-  const id = params.userId;
+type PageProps = {
+  params: Promise<{ userId: string }>;
+};
+
+export default async function UserProfile({ params }: PageProps) {
+  const resolvedParams = await params;
+  const id = resolvedParams.userId;
 
   // Fetch user data from Supabase
   const { data: user, error: userError } = (await supabase
