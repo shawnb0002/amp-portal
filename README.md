@@ -1,4 +1,56 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# AMP CSR Portal
+
+A Next.js-based Customer Service Representative (CSR) portal for managing vehicle subscriptions and customer accounts.
+
+## Overview
+
+The AMP CSR Portal is a comprehensive dashboard that enables customer service representatives to:
+
+- Manage customer profiles and accounts
+- Handle vehicle subscriptions and transfers
+- Process payments and billing information
+- Track customer activity and vehicle status
+
+## Key Features
+
+### Customer Management
+- View and edit customer profiles
+- Search and filter customer lists
+- Track customer activity history
+- Verify email addresses during registration
+
+### Vehicle Management
+- Create and manage vehicle subscriptions
+- Transfer vehicles between customers
+- Edit vehicle details and status
+- View vehicle subscription history
+
+### Subscription Handling
+- Create new subscriptions
+- Cancel existing subscriptions
+- Update subscription details
+- View subscription status and history
+
+### Payment Processing
+- Handle billing information
+- Process payments
+- Update payment details
+- View payment history
+
+### User Interface
+- Responsive sidebar navigation
+- Collapsible menu for space efficiency
+- Quick action buttons for common tasks
+- Status badges for visual feedback
+- Loading states and error handling
+
+## Technical Stack
+
+- **Framework**: Next.js with TypeScript
+- **UI Components**: Custom components with Radix UI primitives
+- **State Management**: React Query for server state
+- **Database**: Supabase
+- **Styling**: Tailwind CSS
 
 ## Getting Started
 
@@ -16,21 +68,25 @@ bun dev
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Project Structure
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- `/app` - Next.js app router pages and API routes
+- `/components` - Reusable React components
+  - `/addCustomerModal` - Customer creation workflow
+  - `/dashboard` - Main dashboard components
+  - `/forms` - Form components for data entry
+  - `/ui` - Shared UI components
+  - `/userProfile` - User profile management
+- `/hooks` - Custom React hooks for data fetching and state management
+- `/lib` - Utility functions and configurations
+- `/types` - TypeScript type definitions
 
 ## Learn More
 
-To learn more about Next.js, take a look at the following resources:
+To learn more about the technologies used in this project:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- [Next.js Documentation](https://nextjs.org/docs)
+- [TypeScript Documentation](https://www.typescriptlang.org/docs)
+- [Tailwind CSS Documentation](https://tailwindcss.com/docs)
+- [React Query Documentation](https://tanstack.com/query/latest)
+- [Supabase Documentation](https://supabase.com/docs)
